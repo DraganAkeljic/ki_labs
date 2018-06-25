@@ -1,0 +1,63 @@
+swagger: "2.0"
+
+info:
+  title: "app API"
+  description: "Interview calendar API"
+  version: "1.0"
+
+paths:
+  /cadidate:
+    post:
+      x-swagger-router-controller: api
+      operationId: calendar_api.add_candidate
+      parameters:
+        - $ref: "some params..."
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+  /candidate/{id}:
+    get:
+      x-swagger-router-controller: api
+      operationId: calendar_api.get_candidate_time
+      parameters:
+        - $ref: "some params..."
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+  /interviewer:
+    post:
+      x-swagger-router-controller: api
+      operationId: calendar_api.add_interviewer
+      parameters:
+        - $ref: "some params..."
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+  /interviewer/{id}:
+    get:
+      x-swagger-router-controller: api
+      operationId: calendar_api.get_interviewer_time
+      parameters:
+        - $ref: "some params..."
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
+  /arrange:
+    post:
+      x-swagger-router-controller: api
+      operationId: calendar_api.arrange
+      parameters:
+        - $ref: "some params..."
+      responses:
+        '200':
+          description: Success
+        '400':
+          description: Bad Request
